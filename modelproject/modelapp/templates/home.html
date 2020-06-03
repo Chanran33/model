@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--article에 있는 모든 내용이 다 뜰 때까지 돌아감-->
+    {% for article in article.all %}
+        <div class="container">
+            <h1>{{article.title}}</h1>
+            <p>{{article.body}}</p>
+            <p>{{article.date}}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
