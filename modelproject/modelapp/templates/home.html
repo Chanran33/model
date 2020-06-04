@@ -7,11 +7,11 @@
 </head>
 <body>
     <!--article에 있는 모든 내용이 다 뜰 때까지 돌아감-->
-    {% for article in article.all %}
+    {% for blog in blog.all %}
         <div class="container">
-            <h1>{{article.title}}</h1>
-            <p>{{article.body}}</p>
-            <p>{{article.date}}</p>
+            <h1>{{blog.title}}</h1>
+            <p>{{blog.body}}</p>
+            <p>{{blog.date}}</p>
         </div>
     {% endfor %}
 </body>
